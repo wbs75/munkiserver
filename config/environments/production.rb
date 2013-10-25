@@ -32,10 +32,11 @@ Munki::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
-  
+
   config.assets.compress = true
   config.assets.compile = true
   config.assets.digest = true
-  
+  config.serve_static_assets = true
+
   config.action_dispatch.x_sendfile_header = "X-Sendfile"
 end
